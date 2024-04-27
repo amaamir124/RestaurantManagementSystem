@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmpRecordController">
+   <left>
+      <AnchorPane prefHeight="447.0" prefWidth="251.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: black;" text="Back" textFill="WHITE" />
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="447.0" prefWidth="418.0" style="-fx-background-color: lavender;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="EmpDetailsLabel" layoutX="-66.0" layoutY="27.0" prefHeight="34.0" prefWidth="298.0" text="EMPLOYEE DETAILS">
+               <font>
+                  <Font name="Book Antiqua Bold" size="23.0" />
+               </font>
+            </Label>
+            <TableView fx:id="EmployeeTable" layoutX="-240.0" layoutY="81.0" prefHeight="231.0" prefWidth="646.0">
+               <columns>
+                  <TableColumn fx:id="NameCol" prefWidth="168.0000457763672" text="NAME" />
+                  <TableColumn fx:id="IdCol" prefWidth="129.59996032714844" text="ID" />
+                  <TableColumn fx:id="PhonenoCol" prefWidth="154.39999389648438" text="PHONE" />
+                  <TableColumn fx:id="AddressCol" minWidth="0.0" prefWidth="191.20001220703125" text="ADDRESS" />
+               </columns>
+            </TableView>
+            <Button fx:id="viewButton" layoutX="36.0" layoutY="344.0" mnemonicParsing="false" onAction="#viewButtonAction" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: black;" text="View" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

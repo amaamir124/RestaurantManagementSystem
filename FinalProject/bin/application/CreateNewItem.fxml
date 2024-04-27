@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CreateNewItemController">
+   <center>
+      <AnchorPane prefHeight="594.0" prefWidth="699.0" style="-fx-background-color: teal;">
+         <children>
+            <AnchorPane layoutX="43.0" layoutY="50.0" prefHeight="494.0" prefWidth="625.0" style="-fx-background-color: white;">
+               <children>
+                  <AnchorPane layoutX="438.0" prefHeight="494.0" prefWidth="189.0" style="-fx-background-color: lavender;" />
+                  <Text fx:id="EnterFoodItemDetails" layoutX="87.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Food Item Details" wrappingWidth="287.73675537109375">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="detailslabel" layoutX="150.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter following details" wrappingWidth="161.336669921875" />
+                  <TextField fx:id="ItemIdTextField" layoutX="115.0" layoutY="210.0" prefHeight="26.0" prefWidth="207.0" promptText="Item ID" />
+                  <TextField fx:id="PriceTextField" layoutX="115.0" layoutY="274.0" prefHeight="26.0" prefWidth="206.0" promptText="Price" />
+                  <Button fx:id="AddButton" layoutX="167.0" layoutY="354.0" mnemonicParsing="false" onAction="#AddButtonOnAction" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: black;" text="Add" textFill="WHITE" />
+                  <Label fx:id="NewEmpLabel" alignment="CENTER" layoutX="105.0" layoutY="102.0" prefHeight="18.0" prefWidth="162.0" textFill="#ef0000" />
+                  <TextField fx:id="ItemNameTextField" layoutX="115.0" layoutY="150.0" prefHeight="26.0" prefWidth="210.0" promptText="Item Name" />
+                  <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="73.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/name.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="68.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/id.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="68.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/price-tag.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="42.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/fast-food.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="BackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#BackButtonOnAction" style="-fx-background-color: orange;" text="Back" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

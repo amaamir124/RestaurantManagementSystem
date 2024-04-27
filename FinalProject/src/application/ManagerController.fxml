@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ManagerController">
+   <center>
+      <AnchorPane prefHeight="594.0" prefWidth="696.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="27.0" layoutY="50.0" prefHeight="494.0" prefWidth="627.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="AddNewEmployee" layoutX="183.0" layoutY="136.0" prefHeight="30.0" prefWidth="162.0" text="Add New Employee">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="470.0" prefHeight="494.0" prefWidth="157.0" style="-fx-background-color: lavender;" />
+                  <Label fx:id="GenerateMonthlyReport" layoutX="180.0" layoutY="351.0" text="Generate Monthly Report">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="GenerateDailyReport" layoutX="180.0" layoutY="302.0" text="Generate Daily Report">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="AddNewEmployeeButton" layoutX="359.0" layoutY="139.0" mnemonicParsing="false" onAction="#AddNewEmployeeButtononAction" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: black;" text="Add" textFill="WHITE" />
+                  <Button fx:id="GenerateDailyReportButton" layoutX="358.0" layoutY="300.0" mnemonicParsing="false" onAction="#GenerateDailyReportButtonOnAction" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: black;" text="Generate" textFill="WHITE" />
+                  <Button fx:id="GenerateMonthlyReportButton" layoutX="359.0" layoutY="349.0" mnemonicParsing="false" onAction="#GenerateMonthlyReportButtonOnAction" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: black;" text="Generate" textFill="WHITE" />
+                  <AnchorPane layoutX="1.0" prefHeight="494.0" prefWidth="156.0" style="-fx-background-color: lavender;" />
+                  <Label fx:id="ShowEmployeeRecords" layoutX="179.0" layoutY="245.0" prefHeight="30.0" prefWidth="153.0" text="Show Employee Records">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="ShowButton" layoutX="358.0" layoutY="248.0" mnemonicParsing="false" onAction="#ShowButtonOnAction" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: black;" text="Show" textFill="WHITE" />
+                  <Label fx:id="WelcomeManager" layoutX="216.0" layoutY="53.0" prefHeight="28.0" prefWidth="217.0" text="Welcome Manager ">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="EmployeeShiftDetails" layoutX="183.0" layoutY="189.0" prefHeight="30.0" prefWidth="162.0" text="Employee shift Details">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="AddEmployeeShiftDetailButton" layoutX="359.0" layoutY="191.0" mnemonicParsing="false" onAction="#AddEmployeeShiftDetailOnAction" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: black;" text="Add" textFill="WHITE" />
+                  <Label fx:id="UpdateMenu" layoutX="180.0" layoutY="400.0" text="Update Menu">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="UpdateMenuButton" layoutX="360.0" layoutY="398.0" mnemonicParsing="false" onAction="#UpdateMenuButtonOnAction" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: black;" text="Update" textFill="WHITE" />
+                  <Label layoutX="183.0" layoutY="442.0" text="Update Inventory">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="UpdateInventoryButton" layoutX="359.0" layoutY="448.0" mnemonicParsing="false" onAction="#UpdateInventoryButtonOnAction" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: black;" text="Update" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="BackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#BackButtonOnAction" style="-fx-background-color: orange;" text="Back" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
