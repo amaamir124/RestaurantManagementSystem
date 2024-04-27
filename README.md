@@ -1,2 +1,2 @@
 # RestaurantManagementSystem
-Restaurant Management system made with javafx and mysql + SRS document 
+Restaurant Management system made with javafx and sql + SRS document 
